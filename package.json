@@ -1,6 +1,6 @@
 {
   "name": "myfitnesspal-foodcalories",
-  "version": "0.0.22",
+  "version": "0.1.0",
   "description": "Get JSON Nutrient Data from myfitnesspal.",
   "main": "index.js",
   "scripts": {
