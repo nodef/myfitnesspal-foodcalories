@@ -1,11 +1,14 @@
 {
   "name": "myfitnesspal-foodcalories",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "description": "Get JSON Nutrient Data from myfitnesspal.",
   "main": "index.js",
   "scripts": {
     "install": "node install",
     "test": "exit"
+  },
+  "bin": {
+    "myfitnesspal-foodcalories": "index.cmd"
   },
   "repository": {
     "type": "git",
