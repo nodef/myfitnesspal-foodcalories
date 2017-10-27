@@ -9,9 +9,7 @@ const request = function(path) {
 };
 
 const $ = function(id) {
-  console.log('requesting '+id);
   return request(`/food/calories/${id}`).then((dom) => {
-    console.log('got response');
     const a = {}, b = {}, document = dom.window.document;
     const viewName = document.querySelector('.food-description');
     if(viewName==null) return {};
@@ -37,7 +35,6 @@ if(require.main===module) {
   const z = {}, a = process.argv;
   const start = parseInt(a[2], 10)||0, stop = parseInt(a[3], 10)||start+1;
   const step = parseInt(a[4], 10)||1, inc = Math.sign(step);
-  console.log(`start: ${start}, stop: ${stop}, step: ${step}, inc: ${inc}`);
   const fetch = (id) => pro.then(() => $(id)).then((ans) => Object.assign(z, ans));
   for(var i=start, pro=Promise.resolve(); i!==stop;) {
     for(var I=Math.min(stop, i+step), p=[]; i!==I; i+=inc)
