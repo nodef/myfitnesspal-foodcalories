@@ -1,0 +1,24 @@
+{
+  "name": "myfitnesspal-foodcalories",
+  "version": "0.0.1",
+  "description": "Get JSON Nutrient Data from myfitnesspal.",
+  "main": "index.js",
+  "scripts": {
+    "test": "exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodef/myfitnesspal-foodcalories.git"
+  },
+  "keywords": [
+    "myfitnesspal",
+    "food",
+    "calories"
+  ],
+  "author": "wolfram77@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nodef/myfitnesspal-foodcalories/issues"
+  },
+  "homepage": "https://github.com/nodef/myfitnesspal-foodcalories#readme"
+}
