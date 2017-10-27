@@ -35,7 +35,7 @@ module.exports = $;
 
 if(require.main===module) {
   const z = {}, a = process.argv;
-  const start = parseInt(a[2], 10)||0, stop = parseInt(a[3], 10);
+  const start = parseInt(a[2], 10)||0, stop = parseInt(a[3], 10)||start+1;
   const step = parseInt(a[4], 10)||1, inc = Math.sign(step);
   console.log(`start: ${start}, stop: ${stop}, step: ${step}, inc: ${inc}`);
   const fetch = (id) => pro.then(() => $(id)).then((ans) => Object.assign(z, ans));
