@@ -6,16 +6,16 @@ Get JSON Nutrient Data from myfitnesspal.
 
 ```bash
 # using as command line application
-node index <start> <stop> <step>
+myfitnesspal-foodcalories <start> <stop> <step>
 
 # get nutrient info of food id 1001
-node index 1001
+myfitnesspal-foodcalories 1001
 
 # get nutrient info of food id 1001 to 1100 (excluding)
-node index 1001 1100
+myfitnesspal-foodcalories 1001 1100
 
 # get nutrient info of food id 1001 to 1100, 20 parallel connections
-node index 1001 1100 20
+myfitnesspal-foodcalories 1001 1100 20
 ```
 
 ```javascript
