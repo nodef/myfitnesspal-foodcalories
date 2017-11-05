@@ -15,6 +15,7 @@ const $ = function(id) {
     if(viewName==null) return {};
     const key = viewName.textContent.trim();
     const servings = document.getElementById('food_entry_weight_id');
+    b['Servings'] = servings.selectedOptions[0].textContent;
     for(var tr of document.querySelectorAll('#nutrition-facts tr')) {
       var tds = tr.getElementsByTagName('td');
       var name = tds[0].textContent.trim();
