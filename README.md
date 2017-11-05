@@ -24,5 +24,5 @@ var foodcalories = require('myfitnesspal-foodcalories');
 // foodcalories(<id>)
 
 foodcalories(1001).then((ans) => console.log(ans));
-// {"Butter - Salted":{ ... }}
+// {"1001":{"Name": "Butter - Salted", ... }}
 ```
