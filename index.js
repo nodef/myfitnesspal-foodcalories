@@ -29,6 +29,8 @@ function bodyParts(z, $, elm) {
   if(!!name) z[name] = $(tds[3]).text().trim();
 };
 
+
+// I. main function
 function searchAll(id) {
   return request(`/food/calories/${id}`).then((html) => {
     var $ = cheerio.load(html), z = {'Id': id};
@@ -41,4 +43,7 @@ function searchAll(id) {
   });
 };
 module.exports = searchAll;
+
+
+// II. command-line
 if(require.main===module) scrapeArange.main({method: searchAll});

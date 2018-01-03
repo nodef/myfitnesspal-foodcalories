@@ -19,10 +19,9 @@ myfitnesspal-foodcalories 1001 1100 20
 ```
 
 ```javascript
-// using as a javascript module
 var foodcalories = require('myfitnesspal-foodcalories');
 // foodcalories(<id>)
 
-foodcalories(1001).then((ans) => console.log(ans));
-// {"1001":{"Name": "Butter - Salted", ... }}
+foodcalories('1001').then((ans) => console.log(ans));
+// {"Id": "1001", "Number": "1001", "Name": "Butter - Salted", ...}
 ```
