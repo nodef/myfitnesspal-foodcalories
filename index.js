@@ -1,5 +1,6 @@
 'use strict';
-const jsdom = require('jsdom');
+const cheerio = require('cheerio');
+const scrapeArange = require('terminal-scrapearange');
 
 const request = function(path) {
   // 1. make request with user-agent
