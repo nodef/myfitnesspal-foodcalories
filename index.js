@@ -5,7 +5,7 @@ const scrapeArange = require('terminal-scrapearange');
 
 function request(path) {
   // 1. make request to myfitnesspal
-  var opt = {method: 'GET', hostname: 'www.myfitnesspal.com', path};
+  var opt = {method: 'GET', protocol: 'http:', hostname: 'www.myfitnesspal.com', path};
   return scrapeArange.request(opt);
 };
 
@@ -30,7 +30,7 @@ function bodyParts(z, $, elm) {
 };
 
 function searchAll(id) {
-  return request(`/food/calories/${id}`).then((dom) => {
+  return request(`/food/calories/${id}`).then((html) => {
     var $ = cheerio.load(html), z = {'Id': id};
     var foodDesc = $('.food-description');
     if(!foodDesc.length) throw new Error('Bad request id');
@@ -40,5 +40,5 @@ function searchAll(id) {
     return z;
   });
 };
-module.exports = $;
+module.exports = searchAll;
 if(require.main===module) scrapeArange.main({method: searchAll});
