@@ -1,6 +1,6 @@
 {
   "name": "myfitnesspal-foodcalories",
-  "version": "0.3.7",
+  "version": "0.3.8",
   "description": "Get JSON Nutrient Data from myfitnesspal.",
   "main": "index.js",
   "scripts": {
@@ -27,6 +27,6 @@
   "homepage": "https://github.com/nodef/myfitnesspal-foodcalories#readme",
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
-    "terminal-scrapearange": "^0.1.10"
+    "terminal-scrapearange": "^0.1.12"
   }
 }
