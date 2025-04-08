@@ -40,3 +40,5 @@ foodcalories('1001').then((ans) => console.log(ans));
 
 
 [myfitnesspal]: https://www.myfitnesspal.com
+
+![](https://ga-beacon.deno.dev/G-RC63DPBH3P:SH3Eq-NoQ9mwgYeHWxu7cw/github.com/nodef/myfitnesspal-foodcalories)
